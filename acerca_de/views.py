@@ -1,7 +1,7 @@
 from multiprocessing import context
 from django.shortcuts import render
 from acerca_de.models import Informacion
-
+#Pagina acerca de:
 def create_informacion(request):
     nueva_informacion = Informacion.objects.create(
          title = "PORTAL EMPLEADOS",

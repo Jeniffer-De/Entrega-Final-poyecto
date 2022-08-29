@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "datos",
     "acerca_de",
+    "licencias",
 ]
 
 MIDDLEWARE = [

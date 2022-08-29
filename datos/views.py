@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+# Pagina Cartas laborales.
+
+def datos_personal(request):
+    return render(request, "cartas_laborales.html", context={})
