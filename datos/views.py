@@ -4,3 +4,4 @@ from django.shortcuts import render
 
 def datos_personal(request):
     return render(request, "cartas_laborales.html", context={})
+
