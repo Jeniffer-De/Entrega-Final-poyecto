@@ -1,11 +1,18 @@
 {%extends "base.html"%}
 
 {%block titulo%}
-   Cartas laborales
+  
+
 {%endblock%}
 
 {% block contenido_que_cambia %}
 
-Hola, imprime tu certificado
-
+<h1>TEMPORALES UNO A Certifica que el (la) colaborador (a) {{cartas_laborales.nombre}},</h1>
+<h2>identificada con cedula numero {{cartas_laborales.Cedula}}</h2>
+<h2>Labora en la compañia desde el {{cartas_laborales.Fecha_inicio}}</h2>
+<h2>desempeñando el cargo de {{cartas_laborales.cargo}}</h2>
+<h2>con un salario basico de {{cartas_laborales.Salario}}</h2>
+<h2>y con un contrato a {{cartas_laborales.Tipo_de_contrato}}</h2>
+<h2>esta  solicitud se expide a solicitud del interesado</h2>  
+ 
 {%endblock %}
