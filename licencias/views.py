@@ -8,10 +8,10 @@ def create_licencias(request):
     licencias_y_permisos = licencias.objects.create(
           nombre= "Ana Carvajal",
           Cedula= "1027863",
-          cargo= "lider",
+          cargo= "Lider",
           Fecha_Permiso= "2204021",
           Total_horas=  "2",
-          Motivo_Permiso= "personal"
+          Motivo_Permiso= "Por calamidad domestica"
          )
     context = {
         "licencias_y_permisos" : licencias_y_permisos

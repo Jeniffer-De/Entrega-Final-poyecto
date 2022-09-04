@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     "datos",
     "acerca_de",
     "licencias",
+    "usuarios",
 ]
 
 MIDDLEWARE = [

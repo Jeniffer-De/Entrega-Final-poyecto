@@ -1,18 +1,46 @@
 {%extends "base.html"%}
 
 {%block titulo%}
-  
+  carga de datos
 
 {%endblock%}
 
 {% block contenido_que_cambia %}
 
-<h1>TEMPORALES UNO A Certifica que el (la) colaborador (a) {{cartas_laborales.nombre}},</h1>
+
+
+<div class="card" style="width: 30rem;">
+  <img src="http://jeffersonaguirre.weebly.com/uploads/7/4/9/7/74979015/descarga_orig.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">
+      TEMPORALES UNO A Certifica que el (la) colaborador (a) {{cartas_laborales.nombre}}
+      identificado (a) con cedula numero {{cartas_laborales.Cedula}}
+      desempeñando el cargo de: {{cartas_laborales.cargo}}
+      ingreso desde el: {{cartas_laborales.Fecha_inicio}}
+      con un salario fijo de: {{cartas_laborales.Salario}}
+      con un contrato a termino {{cartas_laborales.Tipo_de_contrato}}
+      Se imprime a solicitud del empleado.</p>
+  </div>
+</div>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    
+    <table>
+        {{form.as_table}}
+    
+    </table>
+    <p><input type="submit" name="enviar"><p></p>
+    
+    </form>
+     
+    {%endblock %}
+
+<!-- <h1>TEMPORALES UNO A Certifica que el (la) colaborador (a) {{cartas_laborales.nombre}},</h1>
 <h2>identificada con cedula numero {{cartas_laborales.Cedula}}</h2>
 <h2>Labora en la compañia desde el {{cartas_laborales.Fecha_inicio}}</h2>
 <h2>desempeñando el cargo de {{cartas_laborales.cargo}}</h2>
 <h2>con un salario basico de {{cartas_laborales.Salario}}</h2>
 <h2>y con un contrato a {{cartas_laborales.Tipo_de_contrato}}</h2>
-<h2>esta  solicitud se expide a solicitud del interesado</h2>  
- 
-{%endblock %}
+<h2>esta  solicitud se expide a solicitud del interesado</h2>   -->
+

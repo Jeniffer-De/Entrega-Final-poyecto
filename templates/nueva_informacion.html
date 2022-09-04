@@ -4,22 +4,34 @@
    Acerca de
 {%endblock%}
 
-
-
 {% block contenido_que_cambia %}
 
-<h1>PORTAL EMPLEADOS {{nueva_informacion.title}}</h1>
-<h2>CARTAS LABORALES {{nueva_informacion.texto_1}}</h2>
-<h2>LICENCIAS Y PERMISOS {{nueva_informacion.texto_2}}</h2>
-<h2>CONOZCANOS {{nueva_informacion.texto_3}}</h2>
+<h1>{{nueva_informacion.title}}</h1>
 
 <div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
+    <img src="https://uploadgerencie.com/imagenes/certificacion-laboral.png" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <h5 class="card-title">CARTAS LABORALES {{nueva_informacion.texto_1}}</h5>
+        <p class="card-text">Ingresa al siguiente enlace: Genera tu certificado laboral</p>
+        <a href="/create_datos" class="btn btn-primary">Click Aqui</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://uploadgerencie.com/imagenes/seguridad-social-incapacidades-permisos.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">LICENCIAS Y PERMISOS: {{nueva_informacion.texto_2}}</h5>
+        <p class="card-text">Ingresa al siguiente enlace: Solicita tu licencia y/o permiso.</p>
+        <a href="/create_licencias" class="btn btn-primary">Click Aqui</a>
+    </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+    <img src="https://img.freepik.com/vector-premium/equipo-trabajadores-construccion_102811-22.jpg?w=2000" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">CONOZCANOS: {{nueva_informacion.texto_3}}</h5>
+        <p class="card-text">Aqui puede gestionar consultas como trabajador.</p>
+        <a href="/create_informacion/" class="btn btn-primary">Click Aqui</a>
     </div>
 </div>
 
