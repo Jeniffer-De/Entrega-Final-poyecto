@@ -8,4 +8,12 @@
 
 <h1>Hola, Iniciar Sesión :) desde el index</h1>
 
-{%endblock %}
+{% if message %}
+
+    <h2>{{message}}</h2>
+
+{% endif %}
+
+
+
+{% endblock %}
