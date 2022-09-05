@@ -25,11 +25,26 @@
               <a class="nav-link" href="/create_informacion/">Acerca de <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/create_datos">Cartas Laborales</a>
+              <a class="nav-link" href="/create_datos/">Cartas Laborales</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/create_licencias">Licencias y permisos</a>
+              <a class="nav-link" href="/create_licencias/"style="margin-right:10rem">Licencias y permisos</a>
             </li>
+            {% if request.user.is_authenticated %}
+            <li class="nav-item">
+              <a class="nav-link" href="/usuarios/logout/">Cerrar Sesion</a>
+            </li>
+            {% else %}
+            <li class="nav-item">
+              <a class="nav-link" href="/usuarios/login/">Iniciar sesion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/usuarios/registro/">Registrarse</a>
+            </li>
+            {% endif %}
+           
+
+
           </ul>
           <span class="navbar-text">
             Consulta de colaboradores

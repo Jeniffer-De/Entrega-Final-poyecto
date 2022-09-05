@@ -2,8 +2,12 @@ from multiprocessing import context
 from django.shortcuts import render
 from licencias.models import licencias
 
+from django.contrib.auth.decorators import login_required
+
+
 # Pagina Licencias y permisos.
 
+@login_required
 def create_licencias(request):
     licencias_y_permisos = licencias.objects.create(
           nombre= "Ana Carvajal",

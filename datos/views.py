@@ -4,9 +4,10 @@ from unicodedata import name
 from django.shortcuts import render, redirect
 from datos.models import datos
 from datos.forms import Formulario_datos
+from django.contrib.auth.decorators import login_required
 
 # Pagina Cartas laborales.
-
+@login_required
 def create_datos(request):
     print(request.POST)
     if request.method == "POST":
