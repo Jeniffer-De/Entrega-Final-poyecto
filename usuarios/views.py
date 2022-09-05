@@ -3,6 +3,7 @@ from multiprocessing import context
 from django.shortcuts import render, redirect
 
 from django.contrib.auth.forms import AuthenticationForm
+
 from django.contrib.auth import login, logout, authenticate
 
 from usuarios.forms import User_registration_form 
@@ -40,7 +41,7 @@ def registro(request):
             context = {"errors":form.errors}
             form = User_registration_form
             context["form"] = form
-            return render(request, "usuarios/registro.html", {"form":form})
+            return render(request, "usuarios/registro.html", {"form":form}) 
         
         
     elif request.method == "GET":
